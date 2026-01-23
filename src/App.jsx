@@ -15,70 +15,7 @@ const STORAGE_KEYS = {
 const AUTO_SAVE_INTERVAL = 3000 // 3 seconds
 
 const toolbarConfig = [
-  {
-    group: 'clipboard',
-    items: [
-      { type: 'button', label: 'Undo', command: 'undo', icon: "<i class='fas fa-undo'></i>" },
-      { type: 'button', label: 'Redo', command: 'redo', icon: "<i class='fas fa-redo'></i>" },
-      { type: 'button', label: 'Cut', command: 'cut', icon: "<i class='fas fa-cut'></i>" },
-      { type: 'button', label: 'Copy', command: 'copy', icon: "<i class='fas fa-copy'></i>" },
-      { type: 'button', label: 'Paste', command: 'paste', icon: "<i class='fas fa-paste'></i>" },
-      { type: 'button', label: 'Paste Plain Text', command: 'pasteAsPlainText', icon: "<i class='fas fa-file-alt'></i>" },
-    ]
-  },
-  {
-    group: 'formatting',
-    items: [
-      { type: 'button', label: 'Bold', command: 'bold', icon: "<i class='fas fa-bold'></i>" },
-      { type: 'button', label: 'Italic', command: 'italic', icon: "<i class='fas fa-italic'></i>" },
-      { type: 'button', label: 'Underline', command: 'underline', icon: "<i class='fas fa-underline'></i>" },
-      { type: 'button', label: 'Strikethrough', command: 'strikeThrough', icon: "<i class='fas fa-strikethrough'></i>" },
-      { type: 'button', label: 'Superscript', command: 'superscript', icon: "<i class='fas fa-superscript'></i>" },
-      { type: 'button', label: 'Subscript', command: 'subscript', icon: "<i class='fas fa-subscript'></i>" },
-      { type: 'button', label: 'Code', command: 'code', icon: "<i class='fas fa-code'></i>" },
-      { type: 'button', label: 'Clear Formatting', command: 'clearFormatting', icon: "<i class='fas fa-eraser'></i>" },
-    ]
-  },
-  {
-    group: 'textCase',
-    items: [
-      { type: 'button', label: 'UPPERCASE', command: 'uppercase', icon: "<i class='fas fa-arrow-up'></i>" },
-      { type: 'button', label: 'lowercase', command: 'lowercase', icon: "<i class='fas fa-arrow-down'></i>" },
-      { type: 'button', label: 'Sentence case', command: 'sentenceCase', icon: "<i class='fas fa-font'></i>" },
-    ]
-  },
-  {
-    group: 'paragraph',
-    items: [
-      { type: 'select', label: 'Heading', command: 'formatBlock', options: [
-        { label: 'Paragraph', value: 'p' },
-        { label: 'Heading 1', value: 'h1' },
-        { label: 'Heading 2', value: 'h2' },
-        { label: 'Heading 3', value: 'h3' },
-        { label: 'Heading 4', value: 'h4' },
-        { label: 'Heading 5', value: 'h5' },
-        { label: 'Heading 6', value: 'h6' },
-      ]},
-      { type: 'button', label: 'Bulleted List', command: 'insertUnorderedList', icon: "<i class='fas fa-list-ul'></i>" },
-      { type: 'button', label: 'Numbered List', command: 'insertOrderedList', icon: "<i class='fas fa-list-ol'></i>" },
-      { type: 'button', label: 'Block Quote', command: 'insertBlockquote', icon: "<i class='fas fa-quote-left'></i>" },
-      { type: 'button', label: 'Align Left', command: 'alignLeft', icon: "<i class='fas fa-align-left'></i>" },
-      { type: 'button', label: 'Align Center', command: 'alignCenter', icon: "<i class='fas fa-align-center'></i>" },
-      { type: 'button', label: 'Align Right', command: 'alignRight', icon: "<i class='fas fa-align-right'></i>" },
-      { type: 'button', label: 'Align Justify', command: 'alignJustify', icon: "<i class='fas fa-align-justify'></i>" },
-      { type: 'button', label: 'Indent', command: 'indent', icon: "<i class='fas fa-indent'></i>" },
-      { type: 'button', label: 'Outdent', command: 'outdent', icon: "<i class='fas fa-outdent'></i>" },
-    ]
-  },
-  {
-    group: 'insert',
-    items: [
-      { type: 'button', label: 'Link', command: 'createLink', icon: "<i class='fas fa-link'></i>" },
-      { type: 'button', label: 'Image', command: 'insertImage', icon: "<i class='fas fa-image'></i>" },
-      { type: 'button', label: 'Table', command: 'insertTable', icon: "<i class='fas fa-table'></i>" },
-      { type: 'button', label: 'Horizontal Rule', command: 'insertHorizontalRule', icon: "<i class='fas fa-minus'></i>" },
-    ]
-  },
+  
 ]
 
 export default function App() {
