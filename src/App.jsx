@@ -14,6 +14,9 @@ const STORAGE_KEYS = {
 
 const AUTO_SAVE_INTERVAL = 3000 // 3 seconds
 
+const toolbarConfig = [
+  
+]
 
 export default function App() {
   const editorRef = useRef(null)
